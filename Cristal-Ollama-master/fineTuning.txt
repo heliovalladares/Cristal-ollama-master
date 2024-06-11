@@ -1,0 +1,11 @@
+config/training_args.py: Define os argumentos de treinamento utilizando TrainingArguments da biblioteca transformers.
+
+data/dataset.py: Define a classe GameRecommendationDataset que herda de torch.utils.data.Dataset para lidar com a tokenização e etiquetas.
+
+models/llama_model.py: Define uma função get_model para inicializar e retornar o modelo Llama para classificação de sequência.
+
+models/tokenizer.py: Define uma função get_tokenizer para inicializar e retornar o tokenizer Llama.
+
+scripts/train.py: Script principal de treinamento que reúne todos os componentes, treina o modelo e o salva utilizando a função save_model.
+
+utils/helpers.py: Contém funções auxiliares, incluindo save_model para salvar o modelo e o tokenizer, e preprocess_text para qualquer pré-processamento necessário de texto.
