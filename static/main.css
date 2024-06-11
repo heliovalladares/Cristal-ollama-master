@@ -1,0 +1,273 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1C1C1C;
+	font-family: 'Calibri', 'Roboto', sans-serif;
+}
+
+.row.padded_row,
+.row.padded_row > div {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#artext {
+
+	background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+	background-clip: text;
+	display: inline;
+	color:transparent;
+	animation: animated 5s linear infinite;
+}
+
+@keyframes animated{
+
+	to {background-position-x: 161px}
+}
+
+/* layout and common global classes */
+/* ---------------------------------------------------------------------- */
+
+<<<<<<< HEAD
+./* layout and common global classes */
+/* ---------------------------------------------------------------------- */
+
+.chat_window {
+	border-radius: 50px;
+	box-shadow: 0 10px 20px rgba(255, 255, 255, .2);
+	background-color: transparent;
+	overflow: hidden;
+}
+
+=======
+.chat_window {
+	border-radius: 50px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	background-color: #363636;
+	overflow: hidden;
+}
+
+
+
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+.messages {
+	position: relative;
+	list-style: none;
+	padding: 20px 10px 0 10px;
+	margin: 0;
+	height: 400px;
+	overflow: scroll;
+}
+
+.messages .message {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 20px;
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.messages .message .avatar {
+	height: 40px;
+	width: 40px;
+	background-size: cover !important;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.messages .message .timestamp {
+	font-size: 10px;
+	font-weight: 300;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.messages .message.appeared {
+	opacity: 1;
+}
+
+.messages .message .text_wrapper {
+	display: inline-block;
+	padding: 20px;
+	border-radius: 6px;
+	min-width: 150px;
+	position: relative;
+}
+
+.messages .message .text_wrapper::after,
+<<<<<<< HEAD
+.messages .message .text_wrapper::before {
+=======
+.messages .message .text_wrapper:before {
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+	top: 18px;
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.messages .message .text_wrapper::after {
+	border-width: 13px;
+	margin-top: 0px;
+}
+
+.messages .message .text_wrapper::before {
+	border-width: 15px;
+	margin-top: -2px;
+}
+
+/* bot message */
+
+.messages .message.left .avatar {
+	float: left;
+<<<<<<< HEAD
+	background: url('./img/llama.jpeg');
+=======
+	background: url('./img/bot.jpg');
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+}
+
+.messages .message.left .text_wrapper {
+	background-color: #bcbdc0;
+	margin-left: 20px;
+}
+
+<<<<<<< HEAD
+=======
+.messages .message.left .text_wrapper::after,
+.messages .message.left .text_wrapper::before {
+	right: 100%;
+	border-right-color: #bcbdc0;
+}
+
+.messages .message.left .timestamp {
+	color: #363636;
+}
+
+/* user message */
+
+.messages .message.right .avatar {
+	float: right;
+	background: url('./img/guy.jpg');
+}
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+
+.messages .message.right .text_wrapper {
+	background-color: #bcbdc0;
+	margin-right: 20px;
+	float: right;
+}
+
+<<<<<<< HEAD
+
+
+
+.bottom_wrapper {
+	background-color: transparent;
+=======
+.messages .message.right .text_wrapper::after,
+.messages .message.right .text_wrapper::before {
+	left: 100%;
+	border-left-color: #bcbdc0;
+}
+
+.messages .message.right .timestamp {
+	color: #000000;
+}
+
+/* text inpur from user */
+
+.bottom_wrapper {
+	background-color: #363636;
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+	padding: 20px;
+	bottom: 0;
+	display: flex;
+}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+.bottom_wrapper #msg_input {
+	flex-grow: 1;
+	outline-width: 0;
+	padding: 12px;
+	border: 1px solid #363636;
+	border-radius: 50px;
+	margin-right: 15px;
+}
+
+.app_button_1 {
+	width: 140px;
+	background-color: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	padding: 12px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+	color: #000000;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+
+<<<<<<< HEAD
+
+
+
+footer {
+  background-color: #000000; 
+  color: #ffffff; 
+  text-align: center;
+  padding: 20px;
+  font-size: 20px; 
+=======
+/* faq section | right side */
+/* ---------------------------------------------------------------------- */
+
+.panel-group {
+	margin: 1px;
+}
+
+.panel-heading [data-toggle='collapse']:after {
+	font-family: 'FontAwesome';
+	content: '\f054';
+	float: right;
+	font-size: 18px;
+	line-height: 22px;
+	transition: all 0.2s linear;
+
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle='collapse'].collapsed:after {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+footer {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Letras brancas */
+  text-align: center;
+  padding: 20px;
+  font-size: 20px; /* Tamanho do texto (se preferir algo diferente de 0) */
+>>>>>>> 3ae86399bcb30d7da5730a423cc6a65f8a2f90ea
+}
+
